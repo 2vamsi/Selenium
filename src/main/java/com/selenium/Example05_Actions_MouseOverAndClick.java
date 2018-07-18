@@ -13,6 +13,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
+/*
+ * For this - After doing the mouse over, 
+ * we need to perform webdriver.findelement.click -  separately
+ * 
+ */
 public class Example05_Actions_MouseOverAndClick {
 
 

@@ -3,11 +3,21 @@ package com.selenium;
 import java.util.List;
 
 
-/**
- * Example for how to handle calendar items and various other items in selenium
- 	this is a very good example covering various types of items
- 
- we can create this as a method and pass month and date as arguments to it so that anybody can call it as per their requirement
+/*
+ * To choose a value from auto-suggestion :
+ * 		enter some text into text box
+ *  	use driver.findElements to get the suggestions displayed into List of webElements
+ *  	use for loop to iterate through and match the expected value
+ *  	Click on it, when u find the expected value
+ *  
+ *   To enter the number of adults/ children :
+ *   	capture the default value displayed ( Eg. 2)
+ *   	if it is less than the required value ( Eg. 4)
+ *   		Click on + button
+ *   	if it is greater than the required value ( Eg. 1)  
+ *   		click on - button
+ *   
+ *		Note: this is a very good example covering various types of items
  */
 
 import org.openqa.selenium.By;

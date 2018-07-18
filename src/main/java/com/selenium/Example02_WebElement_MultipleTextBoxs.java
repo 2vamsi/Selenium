@@ -5,11 +5,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-/***
- * 
+/*
+ *we use send keys to enter the text into a text box
  *
- * Example of how to locate multiple elements ( text-box) and enter text in each
- * of them
  */
 
 public class Example02_WebElement_MultipleTextBoxs {

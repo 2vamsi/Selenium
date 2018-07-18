@@ -1,10 +1,15 @@
 package com.selenium;
 
-/**
- * Example for how to handle calendar in selenium
+/*
+ 	Look for the expected 'Month & Year' displayed at the top of the Calendar window 
+ 	& keep clicking next button until you get it
+ 	Once you get it, look for the expected date 
+ 	& click on it once you find it
+ 		
+ 	Note: we can create this as a method and pass month and date as arguments to it so that anybody can call it 
  
- we can create this as a method and pass month and date as arguments to it so that anybody can call it as per their requirement
  */
+
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -16,12 +21,12 @@ public class Example07_WebElement_Calender {
 
 	WebDriver driver;
 
-	String month = "December 2018";
+	String month = "October 2018";
 
-	String date = "29";
+	String date = "11";
 
 	@Test
-	public void enterText() throws InterruptedException {
+	public void Calender() throws InterruptedException {
 
 		System.setProperty("webdriver.chrome.driver", "D:/Vamsi/Installables/chromedriver.exe");
 		driver = new ChromeDriver();

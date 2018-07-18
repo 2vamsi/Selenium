@@ -5,10 +5,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-/***
- * Example of how to locate an element ( text-box) and enter some text
+/*
+ *we use send keys to enter the text into a text box
+ *
  */
-
 public class Example01_WebElement_TextBox {
 
 		// create the reference of webDriver , as in selenium every driver class implements the WebDriver interface

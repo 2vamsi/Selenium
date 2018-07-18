@@ -12,7 +12,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
-
+/*
+ * For this, we need to get Ids through getWindowHandles method and then
+ *  switch between the windows using the windowId
+ * 
+ */
 public class Example06_HandlingMultipleWindows {
 
 	WebDriver driver;

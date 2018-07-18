@@ -15,6 +15,13 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
+/* for this, we use select class on the web-element 
+ * and then use select class methods like :
+ * 		SelectByValue  (or)
+ *		SelectByIndex   (or)
+ * 		SelectByVisibleText
+ */
+
 public class Example03_WebElement_SelectBox {
 	
 	/*

@@ -26,7 +26,7 @@ public class Example22_IFrames {
 	@Test
 	public void enterText() throws InterruptedException, ParseException {
 
-		System.setProperty("webdriver.chrome.driver", "C:/Users/vamsi.dadi/Documents/drivers/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "D:/Vamsi/Installables/chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		// it is a standard practice in selenium to make sure that you use Implicit wait

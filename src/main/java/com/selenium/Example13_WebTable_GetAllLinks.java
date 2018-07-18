@@ -21,7 +21,7 @@ public class Example13_WebTable_GetAllLinks {
 	@Test
 	public void enterText() throws InterruptedException, ParseException {
 
-		System.setProperty("webdriver.chrome.driver", "C:/Users/vamsi.dadi/Documents/drivers/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "D:/Vamsi/Installables/chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.get("https://money.rediff.com/gainers/bsc/daily/groupa");
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);

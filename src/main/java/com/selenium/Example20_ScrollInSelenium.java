@@ -24,7 +24,7 @@ public class Example20_ScrollInSelenium {
 	public void enterText() throws InterruptedException, ParseException {
 
 		// First setup browser properties
-		System.setProperty("webdriver.chrome.driver", "C:/Users/vamsi.dadi/Documents/drivers/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "D:/Vamsi/Installables/chromedriver.exe");
 		
 		// create driver object
 		driver = new ChromeDriver();

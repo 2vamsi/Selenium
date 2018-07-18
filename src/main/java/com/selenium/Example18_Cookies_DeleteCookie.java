@@ -25,7 +25,7 @@ public class Example18_Cookies_DeleteCookie {
 	@Test
 	public void enterText() throws InterruptedException, ParseException {
 
-		System.setProperty("webdriver.chrome.driver", "C:/Users/vamsi.dadi/Documents/drivers/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "D:/Vamsi/Installables/chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.navigate().to("https://www.flipkart.com/");
 		

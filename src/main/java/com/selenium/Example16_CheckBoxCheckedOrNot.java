@@ -24,7 +24,7 @@ public class Example16_CheckBoxCheckedOrNot {
 	@Test
 	public void enterText() throws InterruptedException, ParseException {
 
-		System.setProperty("webdriver.chrome.driver", "C:/Users/vamsi.dadi/Documents/drivers/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "D:/Vamsi/Installables/chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.get("http://my.monsterindia.com/create_account.html");
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);

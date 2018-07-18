@@ -29,7 +29,7 @@ public class Example08_WebElement_CalenderTextBoxSelectBox {
 	@Test
 	public void enterText() throws InterruptedException {
 
-		System.setProperty("webdriver.chrome.driver", "C:/Users/vamsi.dadi/Documents/drivers/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "D:/Vamsi/Installables/chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.get("https://www.phptravels.net/");
 

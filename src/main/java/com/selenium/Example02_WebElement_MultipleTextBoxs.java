@@ -20,7 +20,7 @@ public class Example02_WebElement_MultipleTextBoxs {
 	WebDriver driver;
 
 	@Test
-	public void enterText() {
+	public void MultipleTextBoxs() {
 
 		System.setProperty("webdriver.chrome.driver", "C:/Users/vamsi.dadi/Documents/drivers/chromedriver.exe");
 		driver = new ChromeDriver();

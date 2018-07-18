@@ -18,7 +18,7 @@ public class Example06_HandlingMultipleWindows {
 	WebDriver driver;
 
 	@Test
-	public void enterText() {
+	public void HandlingMultipleWindows() {
 
 		System.setProperty("webdriver.chrome.driver", "C:/Users/vamsi.dadi/Documents/drivers/chromedriver.exe");
 		driver = new ChromeDriver();
@@ -36,12 +36,12 @@ public class Example06_HandlingMultipleWindows {
 
 		Set<String> windowsId = driver.getWindowHandles(); // this will give you the Ids for all the windows
 		Iterator<String> itr = windowsId.iterator();
-		// System.out.println(itr);
+				// System.out.println(itr);
 
 		String parentId = itr.next();
-		// System.out.println("parent ID: "+parentId);
+				// System.out.println("parent ID: "+parentId);
 		String childId = itr.next();
-		// System.out.println("child ID: "+childId);
+				// System.out.println("child ID: "+childId);
 
 		driver.switchTo().window(childId);
 		driver.close();

@@ -26,7 +26,7 @@ public class Example01_WebElement_TextBox {
 		driver.get("https://www.facebook.com/");
 		driver.findElement(By.xpath("//*[@id=\'email\']")).sendKeys("helloworld");
 		
-		
+
 		
 	}
 }

@@ -15,25 +15,22 @@ import org.testng.annotations.Test;
 
 public class Example04_Actions_MouseOver {
 
-	// create the reference or instance of webDriver , as in selenium every driver
-	// class implements the WebDriver interface
-
+/*	1. For all mouse related actions we use Actions class
+	2. To do a mouse over we need to create an object of this class
+	3. Action.moveToElement(element).build().perform()  -  is standard way of doing mouse-over in Selenium
+*/
+	
 	WebDriver driver;
 
 	@Test
-	public void enterText() {
+	public void MouseOver() {
 
-		System.setProperty("webdriver.chrome.driver", "C:/Users/vamsi.dadi/Documents/drivers/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "D:/Vamsi/Installables/chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.get("https://www.actitime.com/download");
 
-		WebElement features = driver.findElement(By.xpath("/a[@href='/features']"));
-		// for all mouse related actions we use actions class
-		// to do a mouse over we need to create an object of this class
-		
+		WebElement features = driver.findElement(By.xpath("/html/body/header/div/nav/ul/li[2]/a"));
 		Actions action = new Actions(driver);
-		// below is standard way of doing mouse-over in selenium
-
 		action.moveToElement(features).build().perform();
 
 	}

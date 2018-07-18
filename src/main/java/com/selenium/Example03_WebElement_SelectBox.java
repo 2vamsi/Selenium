@@ -16,35 +16,52 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
 public class Example03_WebElement_SelectBox {
-
-	// create the reference or instance of webDriver , as in selenium every driver
-	// class implements the WebDriver interface
-
+	
+	/*
+	Sometimes some elements look like select-boxes but they are not
+	you can figure out by right-clicking on the element in inspect mode
+	and then looking at the tag name
+	 */
+	
+	
+	/*
+	create the reference or instance of webDriver , as in selenium every driver
+	class implements the WebDriver interface
+	 */
 	WebDriver driver;
 
 	@Test
-	public void enterText() {
+	public void SelectBox() {
 
 		System.setProperty("webdriver.chrome.driver", "C:/Users/vamsi.dadi/Documents/drivers/chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.get("https://www.facebook.com/");
 
-
-		// to select any data from the select box, first we need to create the object of
-		// the select class  -  which will take the element we are trying to select
+		/*  *******
+		to select any data from the select box,
+		 first we need to create the object of the select class  -  
+		 which will take the element we are trying to select as argument
+		*/
+		
+		
 		WebElement day = driver.findElement(By.xpath("//*[@id=\'day\']"));
 		Select select = new Select(day);
 		select.selectByValue("10");
 
 		WebElement month = driver.findElement(By.xpath("//*[@id=\'month\']"));
-		// we can not create the reference again, so we are creating only object which
-		// is allowed
+		
+		/*	we can not create the reference again, 
+		 * so we are creating only object which is allowed
+		*/
+		
 		select = new Select(month);
 		select.selectByIndex(3);
 
 		WebElement year = driver.findElement(By.xpath("//*[@id=\'year\']"));
-		// we can not create the reference again, so we are creating only object which
-		// is allowed
+		
+		/*	we can not create the reference again, 
+		 * so we are creating only object which is allowed
+		*/
 		select = new Select(year);
 		select.selectByVisibleText("1982");
 

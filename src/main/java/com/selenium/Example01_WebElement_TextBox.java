@@ -24,9 +24,8 @@ public class Example01_WebElement_TextBox {
 		System.setProperty("webdriver.chrome.driver", "C:/Users/Vamsi/git/seleniumBasic/drivers/chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.get("https://www.facebook.com/");
-		driver.findElement(By.xpath("//*[@id=\'email\']")).sendKeys("helloworld");
+		driver.findElement(By.xpath("//*[@id='email']")).sendKeys("test@gmail.com");
 		
-
 		
 	}
 }

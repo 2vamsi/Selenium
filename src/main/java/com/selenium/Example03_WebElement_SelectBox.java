@@ -40,7 +40,7 @@ public class Example03_WebElement_SelectBox {
 	@Test
 	public void SelectBox() {
 
-		System.setProperty("webdriver.chrome.driver", "C:/Users/vamsi.dadi/Documents/drivers/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:/Users/Vamsi/eclipse-workspace/Selenium/Selenium/drivers/chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.get("https://www.facebook.com/");
 
@@ -51,11 +51,11 @@ public class Example03_WebElement_SelectBox {
 		*/
 		
 		
-		WebElement day = driver.findElement(By.xpath("//*[@id=\'day\']"));
+		WebElement day = driver.findElement(By.xpath("//*[@id='day']"));
 		Select select = new Select(day);
 		select.selectByValue("10");
 
-		WebElement month = driver.findElement(By.xpath("//*[@id=\'month\']"));
+		WebElement month = driver.findElement(By.xpath("//*[@id='month']"));
 		
 		/*	we can not create the reference again, 
 		 * so we are creating only object which is allowed
@@ -64,7 +64,7 @@ public class Example03_WebElement_SelectBox {
 		select = new Select(month);
 		select.selectByIndex(3);
 
-		WebElement year = driver.findElement(By.xpath("//*[@id=\'year\']"));
+		WebElement year = driver.findElement(By.xpath("//*[@id='year']"));
 		
 		/*	we can not create the reference again, 
 		 * so we are creating only object which is allowed

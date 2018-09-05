@@ -20,7 +20,7 @@ public class Example02_WebElement_MultipleTextBoxs {
 	@Test
 	public void MultipleTextBoxs() {
 
-		System.setProperty("webdriver.chrome.driver", "C:/Users/vamsi.dadi/Documents/drivers/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:/Users/Vamsi/eclipse-workspace/Selenium/Selenium/drivers/chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.get("https://www.facebook.com/");
 
